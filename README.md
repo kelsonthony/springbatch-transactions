@@ -3,11 +3,18 @@
 Projeto para demonstrar como o Spring Batch gerencia transações dentro de um chunk.
 O projeto possui um job que lê um arquivo de usuários e os insere no banco de dados.
 
+## Estrutura do Projeto
+
+- `src/main/java/com/kelsonthony/springbatchtransactions/config/DatasourceConfig.java`: Configuração das fontes de dados.
+- `src/main/java/com/kelsonthony/springbatchtransactions/step/PessoaStep.java`: Configuração do step do Spring Batch.
+- `src/main/resources/application.properties`: Configurações da aplicação.
+
+
 ## Roteiro
 
-- [ ] [Controle transacional com 1 banco de dados](https://github.com/giuliana-bezerra/sb-transactions/tree/v1.0)
-- [ ] [Transação deixa de funcionar com a adição de um novo banco para escrita](https://github.com/giuliana-bezerra/sb-transactions/tree/v2.0)
-- [ ] [Ajustar para utilizar transação no banco secundário](https://github.com/giuliana-bezerra/sb-transactions/tree/v3.0)
+- [ ] [Controle transacional com 1 banco de dados]
+- [ ] [Transação deixa de funcionar com a adição de um novo banco para escrita]
+- [ ] [Ajustar para utilizar transação no banco secundário]
 
 
 ```markdown
@@ -48,17 +55,8 @@ app.datasource.password=<password>
     mvn spring-boot:run
     ```
 
-## Estrutura do Projeto
 
-- `src/main/java/com/kelsonthony/springbatchtransactions/config/DatasourceConfig.java`: Configuração das fontes de dados.
-- `src/main/java/com/kelsonthony/springbatchtransactions/step/PessoaStep.java`: Configuração do step do Spring Batch.
-- `src/main/resources/application.properties`: Configurações da aplicação.
 
-## Roteiro
-
-- [ ] [Controle transacional com 1 banco de dados](https://github.com/giuliana-bezerra/sb-transactions/tree/v1.0)
-- [ ] [Transação deixa de funcionar com a adição de um novo banco para escrita](https://github.com/giuliana-bezerra/sb-transactions/tree/v2.0)
-- [ ] [Ajustar para utilizar transação no banco secundário](https://github.com/giuliana-bezerra/sb-transactions/tree/v3.0)
 
 ## Contribuição
 
